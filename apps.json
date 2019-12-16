@@ -1,0 +1,263 @@
+[
+	{
+		"title": "Search Starter",
+		"thumbnail": "static/wikipedia_search_starter.png",
+		"description": "Searches wikipedia and displays the first search result",
+		"modules": ["query"],
+		"source": "https://glitch.com/edit/#!/wikipedia-search-starter",
+		"owner": "ttseng",
+		"url": "https://wikipedia-search-starter.glitch.me/"
+	},
+	{
+		"title": "Nearby Places Viewer",
+		"thumbnail": "static/nearby_places_viewer.png",
+		"description": "Geo search for wiki pages near your location",
+		"modules": ["geosearch"],
+		"source": "https://github.com/wikimedia/mediawiki-api-demos/tree/master/apps/nearby-places-viewer",
+		"owner": "srish",
+		"url": "https://tools.wmflabs.org/nearby-places-viewer/"
+	},
+	{
+		"title": "Picture of the Day",
+		"thumbnail": "static/picture_of_the_day_viewer.png",
+		"description": "Display Wikipedia's picture of the day",
+		"modules": ["image", "imageinfo"],
+		"source": "https://github.com/wikimedia/mediawiki-api-demos/tree/master/apps/picture-of-the-day-viewer",
+		"owner": "martyav",
+		"url": "https://tools.wmflabs.org/potd-viewer/"
+	},
+	{
+		"title": "Holidays Viewer",
+		"thumbnail": "static/holidays-viewer.png",
+		"description": "Allows viewing and adding new holidays for a given date",
+		"modules": [ "tokens", "parse", "login", "edit" ],
+		"source": "https://github.com/wikimedia/mediawiki-api-demos/tree/master/apps/holidays-viewer",
+		"owner": "brendajerop",
+		"url": "https://tools.wmflabs.org/holidays-viewer/"
+	},
+	{
+		"title": "QR Code Generator",
+		"thumbnail": "static/qrcode-generator.png",
+		"description": "Allows generating and uploading QR code to Wikimedia Commons",
+		"modules": [ "tokens", "upload" ],
+		"source": "https://github.com/wikimedia/mediawiki-api-demos/tree/master/apps/qrcode-generator",
+		"owner": "Jayprakash12345",
+		"url": "https://tools.wmflabs.org/qrcode-generator/"
+	},
+	{
+		"title": "User Contributions",
+		"thumbnail": "static/user_contributions_feed.png",
+		"description": "Fetches top 50 edits made by a user",
+		"modules": ["usercontribs"],
+		"source": "https://github.com/wikimedia/mediawiki-api-demos/tree/master/apps/article-ideas-generator",
+		"owner": "Jayprakash-SE",
+		"url": "https://tools.wmflabs.org/user-contributions-feed/"
+	},
+	{
+		"title": "Account Creator",
+		"thumbnail": "static/create_account_with_captcha.png",
+		"description": "Creates account on a wiki",
+		"modules": ["tokens", "authmanagerinfo", "createaccount"],
+		"source": "https://github.com/wikimedia/mediawiki-api-demos/tree/master/apps/create-account-with-captcha",
+		"owner": "srish",
+		"url": "https://tools.wmflabs.org/account-creator/"
+	},
+	{
+		"title": "Wiki Login",
+		"thumbnail": "static/create_login.png",
+		"description": "Allows logging-in on a wiki",
+		"modules": ["tokens", "login"],
+		"source": "https://github.com/wikimedia/mediawiki-api-demos/tree/master/apps/client-login",
+		"owner": "srish",
+		"url": "http://tools.wmflabs.org"
+	},
+	{
+		"title": "Article Ideas",
+		"thumbnail": "static/article_ideas_generator.png",
+		"description": "Suggests articles from categories that don't yet exist on Wikipedia",
+		"modules": ["parse", "links"],
+		"source": "https://github.com/wikimedia/mediawiki-api-demos/tree/master/apps/article-ideas-generator",
+		"owner": "srish",
+		"url": "https://tools.wmflabs.org/article-ideas-generator/"
+	},
+	{
+		"title": "Quote Mashup",
+		"thumbnail": "static/quote-mashup.png",
+		"description": "Creates a quote mashup from random quotes",
+		"modules": [ "opensearch", "parse" ],
+		"source": "https://github.com/natetyler/natetyler.github.io",
+		"owner": "natetyler",
+		"url": "http://natetyler.github.io/"
+	},
+	{
+		"title": "Wikipedia Viewer",
+		"thumbnail": "static/wikipedia-viewer.png",
+		"description": "Allows searching on Wikipedia",
+		"modules": [ "search", "info" ],
+		"source": "https://github.com/sunilsj99/WikipediaViewer",
+		"owner": "sunilsj99",
+		"url": "https://sunilsj99.github.io/WikipediaViewer/"
+	},
+	{
+		"title": "AfD Stats",
+		"thumbnail": "static/afd-stats.png",
+		"description": "Analyzes a user's voting history of Articles for Deletion.",
+		"modules": [ "revisions", "info" ],
+		"source": "https://github.com/enterprisey/afdstats",
+		"owner": "enterprisey",
+		"url": "https://tools.wmflabs.org/afdstats/"
+	},
+	{
+		"title": "Benchmarker",
+		"thumbnail": "static/mediawiki-benchmarker.png",
+		"description": "Benchmarks MediaWiki installations",
+		"modules": [ "purge", "parse" ],
+		"source": "https://github.com/Fannon/MediaWiki-Benchmarker",
+		"owner": "Fannon",
+		"url": "http://fannon.github.io/MediaWiki-Benchmarker/"
+	},
+	{
+		"title": "OAuth Hello World",
+		"thumbnail": "static/oauth-hello-world.png",
+		"description": "Edits your talk page using OAuth",
+		"modules": [ "userinfo", "tokens", "edit" ],
+		"source": "https://tools.wmflabs.org/oauth-hello-world/index.php?action=download",
+		"owner": "BradJorsch",
+		"url": "https://tools.wmflabs.org/oauth-hello-world/"
+	},
+	{
+		"title": "Wikidata Addlingue",
+		"thumbnail": "static/addlingue.png",
+		"description": "Converts Wikidata string claims to monolingual claims",
+		"modules": [ "backlinks", "wbgetentities" ],
+		"source": "https://github.com/Pascalco/addlingue",
+		"owner": "Pascalco",
+		"url": "https://tools.wmflabs.org/pltools/addlingue/"
+	},
+	{
+		"title": "Recent Acquisitions",
+		"thumbnail": "static/reccat.png",
+		"description": "Shows the newest pages in a category",
+		"modules": [ "categorymembers", "info" ],
+		"source": "https://github.com/hay/wiki-tools/tree/master/public_html/reccat",
+		"owner": "hay",
+		"url": "https://tools.wmflabs.org/hay/reccat/"
+	},
+	{
+		"title": "Wikidata Translate",
+		"thumbnail": "static/wikidata-translate.png",
+		"description": "Translates a term between two or more languages",
+		"modules": [ "wbsearchentities", "wbgetentities" ],
+		"source": "https://github.com/hay/wiki-tools/tree/master/public_html/wdtranslate",
+		"owner": "hay",
+		"url": "https://tools.wmflabs.org/hay/wdtranslate/"
+	},
+	{
+		"title": "Recent Deaths",
+		"thumbnail": "static/recent-deaths.png",
+		"description": "Adds missing dates of deaths",
+		"modules": [ "parse", "wbgetentities" ],
+		"source": "https://github.com/Pascalco/recentdeaths",
+		"owner": "Pascalco",
+		"url": "https://tools.wmflabs.org/pltools/recentdeaths/"
+	},
+	{
+		"title": "Wikidata Skim",
+		"thumbnail": "static/wikidata-skim.png",
+		"description": "A visual wikidata query service",
+		"modules": [ "linkshere", "wbgetentities" ],
+		"source": "https://github.com/hay/wiki-tools/tree/master/public_html/wdskim",
+		"owner": "hay",
+		"url": "https://tools.wmflabs.org/hay/wdskim/"
+	},
+	{
+		"title": "MassMailer",
+		"thumbnail": "static/mass-mailer.png",
+		"description": "Emails wiki users en masse",
+		"modules": [ "emailuser", "tokens" ],
+		"source": "https://phabricator.wikimedia.org/source/tool-massmailer/",
+		"owner": "Urbanecm",
+		"url": "https://tools.wmflabs.org/massmailer/"
+	},
+	{
+		"title": "Parliament Diagrams",
+		"thumbnail": "static/parliament-diagram-generator.png",
+		"description": "Returns details of memberships of parliaments",
+		"modules": [ "wbgetentities", "wbgetclaims" ],
+		"source": "https://github.com/Teester/parliament-diagram-generator",
+		"owner": "Teester",
+		"url": "https://teester.github.io/parliament-diagram-generator/"
+	},
+	{
+		"title": "Wikifeedia",
+		"thumbnail": "static/wikifeedia.png",
+		"description": "A news feed of featured articles",
+		"modules": [ "categories", "random", "categorymembers", "info", "extracts", "pageimages" ],
+		"source": "https://github.com/hackerkid/Wikifeedia",
+		"owner": "hackerkid",
+		"url": "https://wikifeedia.vishnuks.com/"
+	},
+	{
+		"title": "Speed Patrolling",
+		"thumbnail": "static/speed-patrolling.png",
+		"description": "Wikidata tool that makes patrolling easier",
+		"modules": [ "patrol" ],
+		"source": "https://github.com/lucaswerkmeister/tool-speedpatrolling",
+		"owner": "lucaswerkmeister",
+		"url": "https://tools.wmflabs.org/speedpatrolling/"
+	},
+	{
+		"title": "Sightseer Map",
+		"thumbnail": "static/sightseer-map.png",
+		"description": "Features a map with interesting places to visit around Athens",
+		"modules": [ "query", "extracts" ],
+		"source": "https://github.com/desinas/sightseer-map",
+		"owner": "desinas",
+		"url": "https://desinas.github.io/sightseer-map/"
+	},
+	{
+		"title": "Locator-tool",
+		"thumbnail": "static/locator-tool.png",
+		"description": "Tool which helps geocoding existing images",
+		"modules": [ "geocoding" ],
+		"source": "https://github.com/simon04/locator-tool",
+		"owner": "simon04",
+		"url": "https://tools.wmflabs.org/locator-tool/#/"
+	},
+	{
+		"title": "InternetArchiveBot",
+		"thumbnail": "static/iabot.png",
+		"description": "Tool which is analyzing links",
+		"modules": [ "links", "analyze" ],
+		"source": "https://github.com/cyberpower678/Cyberbot_II/tree/master/IABot",
+		"owner": "cyberpower678",
+		"url": "https://tools.wmflabs.org/iabot/"
+	},
+	{
+		"title": "Pageviews Analysis",
+		"thumbnail": "static/pageviews.png",
+		"description": "Suite of tools to analyze page view and unique device statistics for Wikimedia Foundation wikis",
+		"modules": [ "traffic reporting", "analyze" ],
+		"source": "https://github.com/MusikAnimal/pageviews",
+		"owner": "MusikAnimal",
+		"url": "https://tools.wmflabs.org/pageviews"
+	},
+	{
+		"title": "QuickStatements",
+		"thumbnail": "static/quickstatements.png",
+		"description": "Tool that can edit Wikidata items, based on a simple set of text commands",
+		"modules": [ "wikidata", "edit", "text commands" ],
+		"source": "https://bitbucket.org/magnusmanske/wikidata-todo/src/master/",
+		"owner": "Magnus Manske",
+		"url": "https://tools.wmflabs.org/quickstatements/#/"
+	},
+	{
+		"title": "Programs & Events Dashboard",
+		"thumbnail": "static/outreachdashboard.png",
+		"description": "Tool which assists the management of wiki programs and events",
+		"modules": [ "programs", "events", "management" ],
+		"source": "https://github.com/WikiEducationFoundation/WikiEduDashboard",
+		"owner": "WikiEducationFoundation",
+		"url": "https://outreachdashboard.wmflabs.org/"
+	}
+]
