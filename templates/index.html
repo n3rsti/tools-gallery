@@ -14,10 +14,11 @@
 </head>
 <body>
     <header class="navbar">
-        <input type="search" onkeyup="searchApps()" name="search" class="search__input" id="" placeholder="Search for apps..." autocomplete="off" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search for apps...'">
         <a href="#" class="navbar__link">
             <img src="{{ url_for('static', filename="logo2.png") }}" alt="" class="navbar__img">
         </a>
+        <input type="search" onkeyup="searchApps()" name="search" class="search__input" id="" placeholder="Search for apps..." autocomplete="off" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search for apps...'">
+        
         
     </header>
     <nav class="side__nav">
