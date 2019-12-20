@@ -219,7 +219,7 @@
 		"title": "Locator-tool",
 		"thumbnail": "static/locator-tool.png",
 		"description": "Tool which helps geocoding existing images",
-		"modules": [ "geocoding" ],
+		"modules": [ "geolocation", "coordinates", "map", "Commons"],
 		"source": "https://github.com/simon04/locator-tool",
 		"owner": "simon04",
 		"url": "https://tools.wmflabs.org/locator-tool/#/"
@@ -228,7 +228,7 @@
 		"title": "InternetArchiveBot",
 		"thumbnail": "static/iabot.png",
 		"description": "Tool which is analyzing links",
-		"modules": [ "links", "analyze" ],
+		"modules": [ "iabot", "internetarchivebot", "management", "interface", "linkrot", "bot", "dead", "link", "fixing" ],
 		"source": "https://github.com/cyberpower678/Cyberbot_II/tree/master/IABot",
 		"owner": "cyberpower678",
 		"url": "https://tools.wmflabs.org/iabot/"
@@ -237,7 +237,7 @@
 		"title": "Pageviews Analysis",
 		"thumbnail": "static/pageviews.png",
 		"description": "Suite of tools to analyze page view and unique device statistics for Wikimedia Foundation wikis",
-		"modules": [ "traffic reporting", "analyze" ],
+		"modules": [ "pageviews", "page views", "traffic", "visitors", "statistics", "analytics", "stats", "views" ],
 		"source": "https://github.com/MusikAnimal/pageviews",
 		"owner": "MusikAnimal",
 		"url": "https://tools.wmflabs.org/pageviews"
@@ -246,7 +246,7 @@
 		"title": "QuickStatements",
 		"thumbnail": "static/quickstatements.png",
 		"description": "Tool that can edit Wikidata items, based on a simple set of text commands",
-		"modules": [ "wikidata", "edit", "text commands" ],
+		"modules": [ "wikidata", "oauth", "editing", "batch" ],
 		"source": "https://bitbucket.org/magnusmanske/wikidata-todo/src/master/",
 		"owner": "Magnus Manske",
 		"url": "https://tools.wmflabs.org/quickstatements/#/"
