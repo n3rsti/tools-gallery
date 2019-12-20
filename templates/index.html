@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image" href="../static/logo3.png">
-    <link rel="stylesheet" href="../static/style2.css">
-    <script src="../static/app.js"></script>
+    <link rel="icon" type="image" href="{{ url_for('static', filename='logo3.png') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
   integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     <header class="navbar">
         <input type="search" onkeyup="searchApps()" name="search" class="search__input" id="" placeholder="Search for apps..." autocomplete="off" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search for apps...'">
         <a href="#" class="navbar__link">
-            <img src="../static/logo2.png" alt="" class="navbar__img">
+            <img src="{{ url_for('static', filename='logo2.png') }}" alt="" class="navbar__img">
         </a>
         
     </header>

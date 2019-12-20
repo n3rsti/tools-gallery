@@ -10,15 +10,15 @@
 """
 
 import json
-from flask import Flask, render_template
+import flask
 import requests
 
 
-APP = Flask(__name__)
+app = flask.Flask(__name__)
 SESSION = requests.Session()
 
 
-@APP.route('/')
+@app.route('/')
 def index():
     """ Displays the index page accessible at '/'
     """
@@ -27,8 +27,8 @@ def index():
         data = file.read()
         apps = json.loads(data)
 
-    return render_template('index.html', apps=apps)
+    return flask.render_template('index.html', apps=apps)
 
 
 if __name__ == '__main__':
-    APP.run(host='0.0.0.0')
+    app.run(debug=True)
