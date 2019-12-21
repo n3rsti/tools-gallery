@@ -46,6 +46,12 @@
                     <button class="button__link"><a href="{{ app.source }}"><i class="fab fa-bitbucket"></i> Bitbucket</a></button>
                     <button class="button__link"><a href="{{ app.url }}"><i class="fas fa-external-link-alt"></i>Live</a></button>
                 </div>
+                {% elif 'gitlab' in app.source %}
+                <h3 class="author">Built by <a href="//gitlab.com/{{ app.owner }}">@{{ app.owner }}</a></h3>
+                <div class="card__buttons">
+                    <button class="button__link"><a href="{{ app.source }}"><i class="fab fa-gitlab"></i> Gitlab</a></button>
+                    <button class="button__link"><a href="{{ app.url }}"><i class="fas fa-external-link-alt"></i>Live</a></button>
+                </div>
                 {% else %}
                 <h3 class="author">Built by <a href="//github.com/{{ app.owner }}">@{{ app.owner }}</a></h3>
                 <div class="card__buttons">
