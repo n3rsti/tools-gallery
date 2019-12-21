@@ -15,7 +15,7 @@
 <body>
     <header class="navbar">
         <a href="#" class="navbar__link">
-            <img src="{{ url_for('static', filename="logo2.png") }}" alt="" class="navbar__img">
+            <img src="{{ url_for('static', filename="logo3.png") }}" alt="" class="navbar__img">
         </a>
         <input type="search" onkeyup="searchApps()" name="search" class="search__input" id="" placeholder="Search for apps..." autocomplete="off" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search for apps...'">
         
@@ -25,7 +25,7 @@
         
     </nav>
     <main class="main">
-        <p class="description">A showcase of interactive demo apps built using the <a href="https://www.mediawiki.org/wiki/API:Main_page" class="description__link">MediaWiki Action API</a>. To submit your app, read the <a href="https://github.com/wikimedia/mediawiki-api-demos/blob/master/gallery/contributing.md" class="description__link">contribution guidelines</a>.</p>
+        <p class="description">A showcase of interactive tools hosted on <a href="http://tools.wmflabs.org" class="description__link">Wikimedia toolforge</a>. To submit your tool, read the contribution guidelines (coming soon!) </p>
         <h1 class="title">Toolforge apps</h1>
         <section class="main__cards">
             {% for app in apps %}
@@ -42,23 +42,15 @@
                 </div>
                 {% if 'bitbucket' in app.source %}
                 <h3 class="author">Built by <a href="//bitbucket.org/{{ app.owner }}">@{{ app.owner }}</a></h3>
-                <div class="card__buttons">
-                    <button class="button__link"><a href="{{ app.source }}"><i class="fab fa-bitbucket"></i> Bitbucket</a></button>
-                    <button class="button__link"><a href="{{ app.url }}"><i class="fas fa-external-link-alt"></i>Live</a></button>
-                </div>
                 {% elif 'gitlab' in app.source %}
                 <h3 class="author">Built by <a href="//gitlab.com/{{ app.owner }}">@{{ app.owner }}</a></h3>
-                <div class="card__buttons">
-                    <button class="button__link"><a href="{{ app.source }}"><i class="fab fa-gitlab"></i> Gitlab</a></button>
-                    <button class="button__link"><a href="{{ app.url }}"><i class="fas fa-external-link-alt"></i>Live</a></button>
-                </div>
                 {% else %}
                 <h3 class="author">Built by <a href="//github.com/{{ app.owner }}">@{{ app.owner }}</a></h3>
+                {% endif %}
                 <div class="card__buttons">
-                    <button class="button__link"><a href="{{ app.source }}"><i class="fab fa-github"></i> Github</a></button>
+                    <button class="button__link"><a href="{{ app.source }}"><i class="fas fa-code"></i> Source code</a></button>
                     <button class="button__link"><a href="{{ app.url }}"><i class="fas fa-external-link-alt"></i>Live</a></button>
                 </div>
-                {% endif %}
             </div>
             {% endfor %}
             

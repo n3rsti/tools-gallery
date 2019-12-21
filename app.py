@@ -23,7 +23,7 @@ def index():
     """ Displays the index page accessible at '/'
     """
 
-    with open('apps.json', 'r') as file:
+    with open('tools.json', 'r') as file:
         data = file.read()
         apps = json.loads(data)
 
