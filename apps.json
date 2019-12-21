@@ -32,7 +32,7 @@
 		"description": "Tool that can edit Wikidata items, based on a simple set of text commands",
 		"modules": [ "wikidata", "oauth", "editing", "batch" ],
 		"source": "https://bitbucket.org/magnusmanske/wikidata-todo/src/master/",
-		"owner": "Magnus Manske",
+		"owner": "magnusmanske",
 		"url": "https://tools.wmflabs.org/quickstatements/#/"
 	},
 	{
