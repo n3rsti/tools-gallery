@@ -3,8 +3,9 @@ window.onload = function(){
 }
 function searchApps(){
     let list = document.getElementsByClassName('card')
-    let input = document.querySelector('.search__input')
-    let upperInput = input.value.toUpperCase()
+        input = document.querySelector('.search__input')
+        upperInput = input.value.toUpperCase()
+        searchResults = 0
     
     
     for(let i = 0; i < list.length; i++){
@@ -25,18 +26,21 @@ function searchApps(){
 
         }
         if(listTxt.toUpperCase().indexOf(input.value.toUpperCase()) > -1 || isModule === true){
+            searchResults = searchResults + 1
             list[i].style.display = ""
         }
         else {
             list[i].style.display = "none"
         }
-        
-        
     }
-    if(upperInput == ""){
-        document.querySelector(".description").style.display = ""
+    if(searchResults == 0){
+        document.querySelector("footer").className = "footer__sticky"
+        document.querySelector(".description").style.display = "none"
+        document.querySelector(".notools").style.display = "block"
     }
     else {
-        document.querySelector(".description").style.display = "none"
+        document.querySelector("footer").className = ""
+        document.querySelector(".description").style.display = ""
+        document.querySelector(".notools").style.display = "none"
     }
 }

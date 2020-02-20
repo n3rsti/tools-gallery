@@ -4,52 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image" href="{{ url_for('static', filename='logo3.png') }}">
+    <link rel="icon" type="image" href="https://tools-static.wmflabs.org/toolforge/favicons/favicon.ico">
     <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
     <script src="{{ url_for('static', filename='app.js') }}"></script>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
   integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
-    <title>Wikimedia Toolforge</title>
+    <title>Toolforge Gallery</title>
 </head>
 <body>
     <header class="navbar">
         <a href="#" class="navbar__link">
             <img src="{{ url_for('static', filename="logo3.png") }}" alt="" class="navbar__img">
         </a>
-        <input type="search" name="search" class="search__input" id="" placeholder="Search for apps..." autocomplete="off" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search for apps...'">
-        
-        
+        <a href="#" class="navbar__link"></a>
+            <span class="navbar__header">Toolforge Gallery</span>
+        </a>
+        <input type="search" name="search" class="search__input" id="" placeholder="Search for tools..." autocomplete="off" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search for tools...'">
     </header>
     <nav class="side__nav">
         
     </nav>
     <main class="main">
-        <p class="description">A showcase of interactive tools hosted on <a href="http://tools.wmflabs.org" class="description__link">Wikimedia toolforge</a>. To submit your tool, read the contribution guidelines (coming soon!) </p>
-        <h1 class="title">Toolforge apps</h1>
+        <p class="description">A collection of popular tools hosted on <a href="http://tools.wmflabs.org" target="_blank" class="description__link">Wikimedia toolforge</a> that serve a variety of audiences – developers, editors, researchers, community organizers, etc.</p>
+        <p class="notools">There are no tools to show :(</p>
         <section class="main__cards">
             {% for app in apps %}
             <div class="card">
                 <div class="img__div" style="background: url(/tool-gallery/{{ app.thumbnail }}) no-repeat center; background-size: cover;"></div>
-                <h2 class="card__title">{{ app.title }}</h2>
-                <p class="card__description">Searches wikipedia and displays the first search result
+                <h4 class="card__title">{{ app.title }}</h4>
+                <p class="card__description">{{ app.description }}
                  <br>
                 </p>
-                <div class="modules">
-                    {% for module in app.modules %}
-                    <span class="module">{{ module }}</span>
+                <div class="topics">
+                    {% for topic in app.topics %}
+                    <span class="topic">{{ topic }}</span>
                     {% endfor %}
                 </div>
                 {% if 'bitbucket' in app.source %}
-                <h3 class="author">Built by <a href="//bitbucket.org/{{ app.owner }}">@{{ app.owner }}</a></h3>
+                <p class="author">Built by <a href="//bitbucket.org/{{ app.owner }}">@{{ app.owner }}</a></p>
                 {% elif 'gitlab' in app.source %}
-                <h3 class="author">Built by <a href="//gitlab.com/{{ app.owner }}">@{{ app.owner }}</a></h3>
+                <p class="author">Built by <a href="//gitlab.com/{{ app.owner }}">@{{ app.owner }}</a></p>
                 {% else %}
-                <h3 class="author">Built by <a href="//github.com/{{ app.owner }}">@{{ app.owner }}</a></h3>
+                <p class="author">Built by <a href="//github.com/{{ app.owner }}">@{{ app.owner }}</a></p>
                 {% endif %}
                 <div class="card__buttons">
-                    <button class="button__link"><a href="{{ app.source }}"><i class="fas fa-code"></i> Source code</a></button>
-                    <button class="button__link"><a href="{{ app.url }}"><i class="fas fa-external-link-alt"></i>Live</a></button>
+                    <button class="button__link"><a href="{{ app.source }}" target="_blank"><i class="fas fa-code"></i>  Source code</a></button>
+                    <button class="button__link"><a href="{{ app.url }}" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a></button>
                 </div>
             </div>
             {% endfor %}
@@ -57,6 +58,10 @@
             
         </section>
     </main>
-    <footer class="footer"></footer>
+    <footer>
+          <p class="footer__right"><a href="#"><i class="fas fa-chevron-circle-up"></i> Back to top</a>
+          </p><p class="footer__left">Source code of this gallery is <a href="https://github.com/n3rsti/toolforge-gallery" target="_blank">available on Github</a>.
+        </p>
+    </footer>
 </body>
 </html>
