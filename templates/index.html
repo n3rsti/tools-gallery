@@ -7,9 +7,8 @@
     <link rel="icon" type="image" href="https://tools-static.wmflabs.org/toolforge/favicons/favicon.ico">
     <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
     <script src="{{ url_for('static', filename='app.js') }}"></script>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link href="https://tools-static.wmflabs.org/cdnjs/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://tools-static.wmflabs.org/fontcdn/css?family=Lato:400,700&display=swap" rel="stylesheet">
     <title>Toolforge Gallery</title>
 </head>
 <body>
@@ -49,8 +48,8 @@
                 <p class="author">Built by <a href="//github.com/{{ app.owner }}">@{{ app.owner }}</a></p>
                 {% endif %}
                 <div class="card__buttons">
-                    <button class="button__link"><a href="{{ app.source }}" target="_blank"><i class="fas fa-code"></i>  Source code</a></button>
-                    <button class="button__link"><a href="{{ app.url }}" target="_blank"><i class="fas fa-external-link-alt"></i> Live</a></button>
+                    <button class="button__link"><a href="{{ app.source }}" target="_blank"><i class="fa fa-code"></i>  Source code</a></button>
+                    <button class="button__link"><a href="{{ app.url }}" target="_blank"><i class="fa fa-external-link"></i> Live</a></button>
                 </div>
             </div>
             {% endfor %}
