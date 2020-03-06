@@ -4,20 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" type="image" href="https://tools-static.wmflabs.org/toolforge/favicons/favicon.ico">
+    <link rel="icon" href="{{ url_for('static', filename="favicon.ico") }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
     <script src="{{ url_for('static', filename='app.js') }}"></script>
     <link href="https://tools-static.wmflabs.org/cdnjs/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://tools-static.wmflabs.org/fontcdn/css?family=Lato:400,700&display=swap" rel="stylesheet">
-    <title>Toolforge Gallery</title>
+    <title>Tools Gallery</title>
 </head>
 <body>
     <header class="navbar">
         <a href="#" class="navbar__link">
-            <img src="{{ url_for('static', filename="logo3.png") }}" alt="" class="navbar__img">
+            <img src="{{ url_for('static', filename="logo.png") }}" alt="" class="navbar__img">
         </a>
         <a href="#" class="navbar__link"></a>
-            <span class="navbar__header">Toolforge Gallery</span>
+            <span class="navbar__header">Tools Gallery</span>
         </a>
         <input type="search" name="search" class="search__input" id="" placeholder="Search for tools..." autocomplete="off" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search for tools...'">
     </header>
@@ -25,7 +25,8 @@
         
     </nav>
     <main class="main">
-        <p class="description">A collection of popular tools hosted on <a href="http://tools.wmflabs.org" target="_blank" class="description__link">Wikimedia toolforge</a> that serve a variety of audiences – developers, editors, researchers, community organizers, etc.</p>
+        <p class="description">A collection of popular tools hosted on <a href="https://wikitech.wikimedia.org/wiki/Help:Cloud_Services_Introduction" target="_blank" class="description__link">
+        Wikimedia Cloud Services infrastructure</a>. These tools serve a variety of audiences: developers, editors, researchers, community organizers, etc.
         <p class="notools">There are no tools to show :(</p>
         <section class="main__cards">
             {% for app in apps %}
@@ -59,7 +60,7 @@
     </main>
     <footer>
           <p class="footer__right"><a href="#"><i class="fas fa-chevron-circle-up"></i> Back to top</a>
-          </p><p class="footer__left">Source code of this gallery is <a href="https://github.com/n3rsti/toolforge-gallery" target="_blank">available on Github</a>.
+          </p><p class="footer__left">Source code of this gallery is <a href="https://github.com/n3rsti/tools-gallery" target="_blank">available on Github</a>.
         </p>
     </footer>
 </body>
