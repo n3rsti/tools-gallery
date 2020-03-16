@@ -96,7 +96,7 @@
 		"topics": [ "bot", "code", "python", "gerrit-api" ],
 		"source": "https://github.com/wikimedia/labs-tools-gerrit-newcomer-bot",
 		"owner": "srish",
-		"url": "https://tools.wmflabs.org/admin/tool/gerrit-newcomer-bot"
+		"url": "https://wikitech.wikimedia.org/wiki/Tool:Gerrit-newcomer-bot"
 	},
 	{
 		"title": "OOUI Demos",

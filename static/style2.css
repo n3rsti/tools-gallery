@@ -109,7 +109,7 @@ html {
 .description__link {
     text-decoration: none;
     color: var(--primary-blue);
-    font-weight: 700;
+    font-weight: 600;
 }
 .description__link:hover {
     text-decoration: underline;
