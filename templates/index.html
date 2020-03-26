@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style2.css') }}">
     <script src="{{ url_for('static', filename='app.js') }}"></script>
     <link href="https://tools-static.wmflabs.org/cdnjs/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
-    <link href="https://tools-static.wmflabs.org/fontcdn/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link href="https://tools-static.wmflabs.org/fontcdn/css?family=Lato:400,700&amp;display=swap" rel="stylesheet">
     <title>Tools Gallery</title>
 </head>
 <body>
@@ -16,9 +16,7 @@
         <a href="#" class="navbar__link">
             <img src="{{ url_for('static', filename="logo.png") }}" alt="" class="navbar__img">
         </a>
-        <a href="#" class="navbar__link"></a>
-            <span class="navbar__header">Tools Gallery</span>
-        </a>
+        <span class="navbar__header">Tools Gallery</span>
         <input type="search" name="search" class="search__input" id="" placeholder="Search for tools..." autocomplete="off" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search for tools...'">
     </header>
     <nav class="side__nav">
